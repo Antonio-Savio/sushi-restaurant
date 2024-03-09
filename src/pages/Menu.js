@@ -5,8 +5,8 @@ import styled from 'styled-components'
 
 const Menu = () => {
     return (
-        <div>
-            <h1>Menu</h1>
+        <Main>
+            <h1>Our Menu</h1>
             <CardWrap>
                 {MenuList.map((item, index) => {
                     return (
@@ -18,14 +18,27 @@ const Menu = () => {
                         />)
                 })}
             </CardWrap>
-        </div>
+        </Main>
     )
 }
+
+const Main = styled.main`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+    h1 {
+        font-style: oblique;
+    }
+`
 
 const CardWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px 20px;
 `
 
 export default Menu
