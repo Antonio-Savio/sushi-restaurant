@@ -14,12 +14,33 @@ const MenuItem = ({name, image, price}) => {
 const Card = styled.div`
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s ease;
+
+    &:hover {
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+    }
 
     div {
-        background: center;
+        background-position: center;
         background-size: cover;
         width: 250px;
         height: 200px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    h3, p {
+        padding-inline: 20px;
+    }
+
+    p {
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
 `
 

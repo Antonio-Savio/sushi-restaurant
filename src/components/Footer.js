@@ -32,7 +32,7 @@ const BaseBoard = styled.footer`
     ul {
         display: flex;
         list-style: none;
-        gap: 20px
+        gap: 20px;
     }
 
     ul li svg {

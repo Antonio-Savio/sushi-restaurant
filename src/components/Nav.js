@@ -53,7 +53,7 @@ const Header = styled.header`
         display: flex;
         gap: 30px;
         font-weight: 500;
-        /* transition: opacity 0.3s ease; */
+        z-index: 2;
     }
 
     & div:last-child a {

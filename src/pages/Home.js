@@ -7,7 +7,7 @@ function Home() {
     return (
         <Main>
             <h1>Shiawase Sushi</h1>
-            <p>Feel the taste at every bite</p>
+            <p>Feel the happiness at every bite</p>
             <Link to='/menu'>
                 <button>ORDER RIGHT AWAY</button>
             </Link>
@@ -23,8 +23,17 @@ const Main = styled.main`
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding-left: 30px;
-    /* align-items: center; */
+    padding-inline: 30px;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        height: 90vh;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
 
     h1 {
         letter-spacing: 1px;
@@ -55,6 +64,10 @@ const Main = styled.main`
 
     a {
         width: fit-content;
+    }
+
+    h1, a, button, p {
+        z-index: 1;
     }
 `
 
