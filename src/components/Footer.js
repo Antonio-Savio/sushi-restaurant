@@ -22,7 +22,7 @@ const Footer = () => {
 
 const BaseBoard = styled.footer`
     height: 90px;
-    background-color: #e50;
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +44,14 @@ const BaseBoard = styled.footer`
 
     ul li svg:hover {
         color: #fff;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    p a {
+        margin-left: 4px;
     }
 `
 

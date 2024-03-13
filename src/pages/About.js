@@ -49,6 +49,7 @@ const Main = styled.main`
     display: flex;
     flex-direction: column;
     padding: 50px 150px;
+    background-color: var(--background-color);
 
     h1 {
         align-self: center;
@@ -64,6 +65,14 @@ const Main = styled.main`
 
     div {
         align-self: center;
+    }
+
+    @media (max-width: 600px) {
+        padding: 50px 50px;
+
+        p {
+            font-size: 16px;
+        }
     }
 `
 

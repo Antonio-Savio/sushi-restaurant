@@ -27,6 +27,7 @@ const Main = styled.main`
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+    background-color: var(--background-color);
 
     h1 {
         font-style: oblique;

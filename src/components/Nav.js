@@ -31,7 +31,7 @@ const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e50;
+    background-color: var(--main-color);
     padding: 0px 30px;
 
     a:first-of-type {
@@ -68,8 +68,8 @@ const Header = styled.header`
         background-color: #000;
         position: relative;
         display: block;
-        width: 30px;
-        height: 2px;
+        width: 34px;
+        height: 3px;
         top: 29px;
         left: 35px;
         transition: 0.5s ease-in-out;
@@ -86,11 +86,11 @@ const Header = styled.header`
     }
 
     span::before {
-        top: -10px;
+        top: -12px;
     }
 
     span::after {
-        bottom: -10px;
+        bottom: -12px;
     }
 
     span.openedMenu {
@@ -115,13 +115,15 @@ const Header = styled.header`
         & div:last-child {
             flex-direction: column;
             align-items: center;
-            background-color: #e50;
+            background-color: var(--main-color);
             position: absolute;
             right: 0;
             top: 0;
             margin-top: 90px;
             padding: 30px;
             display: none;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
         }
 
         div.openedMenu {
