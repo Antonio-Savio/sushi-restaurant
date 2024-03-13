@@ -18,7 +18,7 @@ function Home() {
 const Main = styled.main`
     background: url(${Banner}) no-repeat center;
     background-size: cover;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +31,7 @@ const Main = styled.main`
         top: 90px;
         left: 0;
         width: 100%;
-        height: 90vh;
+        height: 80vh;
         background-color: rgba(255, 255, 255, 0.4);
     }
 
