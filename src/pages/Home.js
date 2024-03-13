@@ -51,7 +51,7 @@ const Main = styled.main`
         font-weight: 500;
         font-size: 18px;
         letter-spacing: 1px;
-        background-color: #e50;
+        background-color: var(--main-color);
         border-radius: 8px;
         cursor: pointer;
         transition: 0.2s;
