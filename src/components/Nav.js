@@ -1,10 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Logo from '../assets/restaurant-logo.png'
 import { Link } from "react-router-dom";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
+    const burgerRef = useRef()
+    const menuRef = useRef()
+
+    const handleClickOutside = (event) => {
+        if (!menuRef.current.contains(event.target) &&
+            !burgerRef.current.contains(event.target)) {
+          setMenuOpen(false)
+        }
+      };
+
+    useEffect(() => {
+        document.addEventListener("click", handleClickOutside)
+    }, [])
 
     return (
         <Header>
@@ -12,12 +25,12 @@ function Navbar() {
                 <img src={Logo} alt="restaurant logo" />
             </Link>
             
-            <div onClick={() => setMenuOpen(!menuOpen)}>
+            <div ref={burgerRef} onClick={() => setMenuOpen(!menuOpen)}>
                 <span className={menuOpen ? "openedMenu" : ""}>
                 </span>
             </div>
 
-            <div className={menuOpen ? "openedMenu" : ""}>
+            <div ref={menuRef} className={menuOpen ? "openedMenu" : ""}>
                 <Link to="/">Home</Link>
                 <Link to="/menu">Menu</Link>
                 <Link to="/about">About</Link>
