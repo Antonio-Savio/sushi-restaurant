@@ -30,6 +30,8 @@ const About = () => {
                 So come join us at Shiawase Sushi and embark on a culinary voyage that's sure to leave you smiling. Whether you're a sushi aficionado or a newcomer to Japanese cuisine, we invite you to experience the joy of dining at Shiawase Sushi – where happiness is always on the menu.
             </p>
 
+            <h2>We are located at 🗺️</h2>
+
             <div>
                 {isLoaded ? (
                     <GoogleMap
@@ -62,16 +64,30 @@ const Main = styled.main`
         font-size: 18px;
         text-align: justify;
     }
+    
+    h2 {
+        align-self: center;
+        padding-bottom: 20px;
+    }
 
     div {
         align-self: center;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
         padding: 50px 50px;
+    }
+
+    @media (max-width: 600px) {
+        padding: 50px 30px;
 
         p {
             font-size: 16px;
+        }
+
+        div {
+            max-width: 300px;
+            max-height: 240px;
         }
     }
 `

@@ -9,7 +9,8 @@ function Navbar() {
     const menuRef = useRef()
 
     const handleClickOutside = (event) => {
-        if (!menuRef.current.contains(event.target) &&
+        if (burgerRef.current && menuRef.current &&
+            !menuRef.current.contains(event.target) &&
             !burgerRef.current.contains(event.target)) {
           setMenuOpen(false)
         }

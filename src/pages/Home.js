@@ -18,7 +18,7 @@ function Home() {
 const Main = styled.main`
     background: url(${Banner}) no-repeat center;
     background-size: cover;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

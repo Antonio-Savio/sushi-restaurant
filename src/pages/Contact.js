@@ -45,7 +45,7 @@ const Main = styled.main`
     .right-side {
         width: 50vw;
         padding: 50px;
-        height: 80vh;
+        min-height: 80vh;
         background-color: var(--background-color);
     }
 
