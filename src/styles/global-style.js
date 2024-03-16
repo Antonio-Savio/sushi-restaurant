@@ -2,8 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --main-color: #aaf67F;
-    --background-color: rgb(212, 251, 191, 0.7);
+    --main-color: rgb(121, 172, 120);
+    --background-color: rgb(208, 231, 210);
+    --time: 0.2s;
   }
   
   * {
