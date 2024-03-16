@@ -32,7 +32,7 @@ const Main = styled.main`
         left: 0;
         width: 100%;
         height: 80vh;
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(208, 231, 210, 0.4);
     }
 
     h1 {
@@ -54,7 +54,7 @@ const Main = styled.main`
         background-color: var(--main-color);
         border-radius: 8px;
         cursor: pointer;
-        transition: 0.2s;
+        transition: var(--time);
     }
 
     button:hover{

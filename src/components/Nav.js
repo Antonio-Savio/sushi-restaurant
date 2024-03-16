@@ -50,10 +50,16 @@ const Header = styled.header`
 
     a:first-of-type {
         display: flex;
+        transition: var(--time);
+    }
+
+    a:first-of-type:hover {
+        transform: scale(1.03);
     }
 
     img {
         width: 90px;
+        filter: drop-shadow(2px 2px 4px #000);
     }
 
     div:first-of-type {
@@ -71,7 +77,7 @@ const Header = styled.header`
     }
 
     & div:last-child a {
-        transition: 0.2s;
+        transition: var(--time);
     }
 
     & div:last-child a:hover {

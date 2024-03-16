@@ -38,7 +38,7 @@ const BaseBoard = styled.footer`
     ul li svg {
         width: 30px;
         height: 30px;
-        transition: 0.2s;
+        transition: var(--time);
         cursor: pointer;
     }
 
