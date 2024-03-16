@@ -68,6 +68,7 @@ const Main = styled.main`
         border: none;
         border-radius: 8px;
         box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
+        transition: var(--time);
     }
 
     input:hover, textarea:hover, button:hover {
@@ -81,7 +82,16 @@ const Main = styled.main`
     button {
         background-color: var(--main-color);
         margin-top: 10px;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
         cursor: pointer;
+    }
+
+    button:hover {
+        color: #fff;
     }
 
     @media (max-width: 600px) {
