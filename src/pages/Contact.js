@@ -1,29 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import Shiawase from '../assets/shiawase.jpg'
 import styled from "styled-components";
 
 const Contact = () => {
+    const [formState, setFormState] = useState({
+        name: '',
+        email: '',
+        message: '',
+    })
+
+    const handleChanges = (e) => {
+        const {name, value} = e.target
+
+        setFormState((prevState) => ({
+            ...prevState,
+            
+            [name]: value,
+        }))
+    }
+
     return (
         <Main>
             <div className="left-side">
-
             </div>
             
             <div className="right-side">
                 <h1>Contact Us</h1>
                 
-                <form method="POST">
+                <form method="GET" noValidate>
                     <label htmlFor="name">Name</label>
-                    <input type="text" name="name" id="name" />
+                    <input type="text" name="name" id="name" value={formState.name} onChange={handleChanges} />
 
                     <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" />
+                    <input type="email" name="email" id="email" value={formState.email} onChange={handleChanges} />
 
                     <label htmlFor="message">Message</label>
                     <textarea
                         rows="6"
                         name="message"
                         id="message"
+                        value={formState.message}
+                        onChange={handleChanges}
                     ></textarea>
 
                     <button type="submit">Submit</button>
