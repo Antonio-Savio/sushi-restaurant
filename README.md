@@ -3,17 +3,18 @@ Responsive Landing Page for Shiawase Sushi Restaurant. This is a React based pro
 
 ## Desktop Overview 🖳
 
-<img src="" alt="sushi restaurant desktop overview">
+<img src="src/assets/desktop-version.gif" alt="sushi restaurant desktop overview">
 
 ## Mobile Overview 📱
 
-<img src="" alt="sushi restaurant mobile overview">
+<img width="280px" src="src/assets/sushi-mobile-version.gif" alt="sushi restaurant mobile overview">
 
 ## Link 🔗
 - [Sushi Restaurant](https://sushi-restaurant-olive.vercel.app/)
 
 ## Functionalities ☑️
-- Four pages: Home, Menu, About and Contact. 
+- Four pages: Home, Menu, About and Contact.
+- Header and Footer at every page.
 - Burger menu at mobile version.
 - Helper with a list of items from the menu.
 - Map marker from Google API available in the About section.
