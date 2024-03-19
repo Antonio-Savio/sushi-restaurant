@@ -84,16 +84,20 @@ const Main = styled.main`
         padding: 10px;
         border: none;
         border-radius: 8px;
-        box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
         transition: var(--time);
     }
 
-    input:hover, textarea:hover, button:hover {
+    input, textarea {
+        box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    input:focus, textarea:focus {
         box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.2);
     }
 
     textarea {
         width: 100%;
+        resize: none;
     }
 
     button {
@@ -109,6 +113,7 @@ const Main = styled.main`
 
     button:hover {
         color: #fff;
+        filter: brightness(110%);
     }
 
     @media (max-width: 600px) {

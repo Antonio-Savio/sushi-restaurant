@@ -59,7 +59,7 @@ const Main = styled.main`
 
     button:hover{
         color: #fff;
-        filter: brightness(90%);
+        filter: brightness(110%);
     }
 
     a {
@@ -68,6 +68,20 @@ const Main = styled.main`
 
     h1, a, button, p {
         z-index: 1;
+    }
+
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            font-size: 16px;
+        }
     }
 `
 
