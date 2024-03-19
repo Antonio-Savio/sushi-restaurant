@@ -63,7 +63,7 @@ const Header = styled.header`
     }
 
     div:first-of-type {
-        width: 65px;
+        width: 34px;
         height: 60px;
         cursor: pointer;
         display: none;
@@ -91,7 +91,6 @@ const Header = styled.header`
         width: 34px;
         height: 3px;
         top: 29px;
-        left: 35px;
         transition: 0.5s ease-in-out;
     }
 
