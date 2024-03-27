@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Shiawase from '../assets/shiawase.jpg'
 import styled from "styled-components";
+import { buttonStyle } from "../styles/global-style";
 
 const Contact = () => {
     const [formState, setFormState] = useState({
@@ -101,19 +102,8 @@ const Main = styled.main`
     }
 
     button {
-        background-color: var(--main-color);
         margin-top: 10px;
-        font-family: inherit;
-        font-size: inherit;
-        font-weight: 500;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
-
-    button:hover {
-        color: #fff;
-        filter: brightness(110%);
+        ${buttonStyle}
     }
 
     @media (max-width: 600px) {
