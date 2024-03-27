@@ -16,6 +16,7 @@ Responsive Landing Page for Shiawase Sushi Restaurant. This is a React based pro
 - Four pages: Home, Menu, About and Contact.
 - Header and Footer at every page.
 - Burger menu at mobile version.
+- Burger menu animation.
 - Helper with a list of items from the menu.
 - Map marker from Google API available in the About section.
 - Adapt layout through different screen sizes.
