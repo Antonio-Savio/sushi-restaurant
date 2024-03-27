@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import styled from "styled-components";
 import Banner from '../assets/sushi-background.jpg'
+import { buttonStyle } from "../styles/global-style";
 
 function Home() {
     return (
@@ -47,19 +48,8 @@ const Main = styled.main`
     button {
         border: none;
         padding: 10px 20px;
-        font-family: inherit;
-        font-weight: 500;
+        ${buttonStyle}
         font-size: 18px;
-        letter-spacing: 1px;
-        background-color: var(--main-color);
-        border-radius: 8px;
-        cursor: pointer;
-        transition: var(--time);
-    }
-
-    button:hover{
-        color: #fff;
-        filter: brightness(110%);
     }
 
     a {
