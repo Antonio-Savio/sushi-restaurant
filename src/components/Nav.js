@@ -13,11 +13,24 @@ function Navbar() {
             !menuRef.current.contains(event.target) &&
             !burgerRef.current.contains(event.target)) {
           setMenuOpen(false)
+          localStorage.setItem('isMenuOpened', false)
         }
-      };
+    };
+
+    function toggleMenu() {
+        setMenuOpen(!menuOpen)
+        localStorage.setItem('isMenuOpened', !menuOpen)
+    }
 
     useEffect(() => {
         document.addEventListener("click", handleClickOutside)
+    })
+
+    useEffect(() => {
+        const menuData = localStorage.getItem('isMenuOpened')
+        if (menuData){
+            setMenuOpen(JSON.parse(menuData))
+        }
     }, [])
 
     return (
@@ -26,7 +39,7 @@ function Navbar() {
                 <img src={Logo} alt="restaurant logo" />
             </Link>
             
-            <div ref={burgerRef} onClick={() => setMenuOpen(!menuOpen)}>
+            <div ref={burgerRef} onClick={toggleMenu}>
                 <span className={menuOpen ? "openedMenu" : ""}>
                 </span>
             </div>
