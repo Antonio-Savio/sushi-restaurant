@@ -1,13 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import Modal from "./Modal";
+import { FaPlus, FaMinus } from "react-icons/fa";
+
 
 const MenuItem = ({name, image, price}) => {
+    const [modalVisible, setModalVisible] = useState(false)
+
+    const [counter, setCounter] = useState(1)
+
+    const handleCardClick = () => {
+        setModalVisible(true)
+    }
+
     return (
-        <Card>
-            <div style={{ backgroundImage: `url(${image})` }}> </div>
-            <h3>{name}</h3>
-            <p>${price} per unit</p>
-        </Card>
+        <>
+            <Card onClick={handleCardClick}>
+                <div style={{ backgroundImage: `url(${image})` }}> </div>
+                <h3>{name}</h3>
+                <p>${price} per unit</p>
+            </Card>
+
+            <Modal visible={modalVisible} setVisibility={setModalVisible}>
+                <div className="img-container">
+                    <img src={image} width="320px" alt={name} />
+                </div>
+
+                <h2>{name}</h2>
+                <p>${(price * counter).toFixed(2)}</p>
+
+                <div className="quantity-wrap">
+                    <button onClick={() => counter > 1 ? setCounter(counter - 1) : setCounter(1)}><FaMinus /></button>
+                    <span>{counter}</span>
+                    <button onClick={() => setCounter(counter + 1)}><FaPlus /></button>
+                </div>
+
+                <button className="order">Order</button>
+
+            </Modal>
+        </>
     )
 }
 
