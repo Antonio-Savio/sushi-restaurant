@@ -3,7 +3,7 @@ Responsive Landing Page for Shiawase Sushi Restaurant. This is a React based pro
 
 ## Desktop Overview 🖳
 
-<img src="src/assets/desktop-version.gif" alt="sushi restaurant desktop overview">
+<img src="src/assets/desktop-version-sushi-restaurant.gif" alt="sushi restaurant desktop overview">
 
 ## Mobile Overview 📱
 
