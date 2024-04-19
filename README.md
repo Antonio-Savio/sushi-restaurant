@@ -29,6 +29,8 @@ Responsive Landing Page for Shiawase Sushi Restaurant. This is a React based pro
 - React-icons: A library providing high-quality icons for use in React applications, easily integrable with React components for visually appealing user interfaces.
 - Google Maps JavaScript API: programming interface provided by Google that allows developers to embed interactive maps and location-based services into web applications using JavaScript.
 
+## What I learned 📒
+
 ## Run the project 👨‍💻
 1. Clone the Repository:
 
