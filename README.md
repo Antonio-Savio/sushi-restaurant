@@ -30,6 +30,7 @@ Responsive Landing Page for Shiawase Sushi Restaurant. This is a React based pro
 - Google Maps JavaScript API: programming interface provided by Google that allows developers to embed interactive maps and location-based services into web applications using JavaScript.
 
 ## What I learned 📒
+- How to make a color filter for background image. It was important for contrast between image and text.
 
 ## Run the project 👨‍💻
 1. Clone the Repository:
