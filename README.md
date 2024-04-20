@@ -31,6 +31,7 @@ Responsive Landing Page for Shiawase Sushi Restaurant. This is a React based pro
 
 ## What I learned 📒
 - How to make a color filter for background image. It was important for contrast between image and text.
+- Handle a helper to assist data to the Menu component.
 
 ## Run the project 👨‍💻
 1. Clone the Repository:
