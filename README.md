@@ -32,6 +32,7 @@ Responsive Landing Page for Shiawase Sushi Restaurant. This is a React based pro
 ## What I learned 📒
 - How to make a color filter for background image. It was important for contrast between image and text.
 - Handle a helper to assist data to the Menu component.
+- How to create and style modal component.
 - Create a burger menu animation that 3 stripes switch to a 'X'.
 - Consume the Google Maps API to show the restaurant geolocation.
 - To work with form in React and handle functions.
