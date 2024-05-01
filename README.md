@@ -21,6 +21,7 @@ Responsive Landing Page for Shiawase Sushi Restaurant. This is a React based pro
 - Modal for each menu item to select quantity of sushi units to order.
 - Map marker from Google API available in the About section.
 - Adapt layout through different screen sizes.
+- Persist menu status (open/closed) in the mobile version.
 
 ## Used Tools ⚙️
 - React JS: An open-source JavaScript library for building user interfaces (UI) for web applications, known for its efficiency and component-based development paradigm.
