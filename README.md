@@ -37,6 +37,7 @@ Responsive Landing Page for Shiawase Sushi Restaurant. This is a React based pro
 - Create a burger menu animation that 3 stripes switch to a 'X'.
 - Consume the Google Maps API to show the restaurant geolocation.
 - To work with form in React and handle functions.
+- To set LocalStorage in the application.
 
 ## Run the project 👨‍💻
 1. Clone the Repository:
