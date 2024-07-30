@@ -21,6 +21,7 @@ Responsive Landing Page for Shiawase Sushi Restaurant. This is a React based pro
 - Modal for each menu item to select quantity of sushi units to order.
 - Map marker from Google API available in the About section.
 - Adapt layout through different screen sizes.
+- Persist menu status (open/closed) in the mobile version.
 
 ## Used Tools ⚙️
 - React JS: An open-source JavaScript library for building user interfaces (UI) for web applications, known for its efficiency and component-based development paradigm.
@@ -28,6 +29,15 @@ Responsive Landing Page for Shiawase Sushi Restaurant. This is a React based pro
 - React-router-dom: A library for handling navigation between pages in React web applications, enabling route creation and rendering specific components for each route.
 - React-icons: A library providing high-quality icons for use in React applications, easily integrable with React components for visually appealing user interfaces.
 - Google Maps JavaScript API: programming interface provided by Google that allows developers to embed interactive maps and location-based services into web applications using JavaScript.
+
+## What I learned 📒
+- How to make a color filter for background image. It was important for contrast between image and text.
+- Handle a helper to assist data to the Menu component.
+- How to create and style modal component.
+- Create a burger menu animation that 3 stripes switch to a 'X'.
+- Consume the Google Maps API to show the restaurant geolocation.
+- To work with form in React and handle functions.
+- To set LocalStorage in the application.
 
 ## Run the project 👨‍💻
 1. Clone the Repository:
